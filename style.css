@@ -20,7 +20,19 @@ a:any-link {
     --cinza--claro: #CDD1D2;
     --azul--texto: #04436E;
 }
-
+/* ESTILIZANDO A BARRA DE ROLAGEM VERTICAL */
+body::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+    
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--azul--texto);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid var(--azul--principal);  /* creates padding around scroll thumb */
+  }
+  body::-webkit-scrollbar-track {
+    background:var(--cinza--claro);        /* color of the tracking area */
+  }
 /* -------------------- HEADER ------------------ */
 .header {
     display: flex;
