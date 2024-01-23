@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700;800&family=Alegreya+Sans:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+    <!-- Biblioteca BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Ícone na Aba do Navegado -->
+    <link rel="icon" href="./assets/logo_icon.svg">
+    <!-- Folhas de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script defer src="./script/hamburguer.js"></script>
+    <script defer src="./script/carrossel.js"></script>
+    <script defer src="./script/mapa.js"></script>
+    <!-- carrossel swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery animações -->
+
+
+
+    <title>MB Padrões</title>
+</head>
+
+<body>
+    <!----------------------- HEADER  --------------------------->
+    <header class="header">
+
+        <div class="header_logo">
+            <img src="./assets/logo_completa.svg" alt="Logo da Mb Padrões">
+
+        </div>
+
+        <div class="navbar">
+            <!------- MENU HAMBURGUER ------>
+            <div class="menu_hamburguer" id="menu_hamburguer">
+                <i class='bx bx-menu bx-lg'></i>
+            </div>
+            <div class="menu" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_somos.svg"><a href="./index.html">Quem Somos<div class="underline"></div></a>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_servicos.svg">
+                    <a href="./servicos.html">Serviços<div class="underline"></div></a>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_produtos.svg">
+                    <a href="./produtos.html">Produtos<div class="underline"></div></a>
+                </div>
+            </div>
+
+            <div class="header_desktop">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none">
+                    <path d="M1 1L0.999997 71" stroke="#E9AB01" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <a class="header_instagram" target="_blank" href="https://www.instagram.com/mbpadroes/">
+                    <img src="./assets/icon_instagram.svg">
+                    <p>Siga nosso<br> Instagram!</p>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+                    <path d="M1.5 1L1.5 71" stroke="#E9AB01" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+                <div class="header_whatsapp">
+                    <a href="https://wa.me/5562991197234" target="_blank"><img src="./assets/btn_whatsapp.svg">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!----------------------- MAIN  --------------------------->
+    <main>
+        <!-- CARROSSELLLLLLLLLLLLLLLLL  -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/carrossel/carrossel-1.svg"></div>
+                <div class="swiper-slide"><img src="./assets/carrossel/carrossel-2.svg"></div>
+                <div class="swiper-slide"><img src="./assets/carrossel/carrossel-1.svg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!----------------- CONTAINER TÍTULO -------------------->
+        <div class="container_titulo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="2" viewBox="0 0 105 2" fill="none">
+                <path d="M1 1H104" stroke="#00263D" stroke-linecap="round" />
+            </svg>
+            <div class="titulo_caixa">
+                <img src="./assets/icone_somos.svg">
+                <h2>Quem Somos</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="2" viewBox="0 0 105 2" fill="none">
+                <path d="M1 1H104" stroke="#00263D" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="container_quemsomos">
+            <h3>Desde junho de 2015, estamos transformando <span>sonhos em realidade</span> e expandindo nossas ideias.
+                <span>A Mb Padrões</span>, comprometida em proporcionar novas oportunidades para nossa equipe, trabalha
+                diariamente com o objetivo primordial de <span>superar as expectativas</span> dos nossos clientes.<h3>
+                    <h4>Pautamos nossas negociações com <span>seriedade</span>, guiados pela missão de consolidar a
+                        marca <span>MB PADRÕES</span> como <span>referência</span> no mercado do nosso segmento. </h4>
+                    <h5>Isso é alcançado com <span>dedicação incansável</span> de nossa equipe de colaboradores, que se
+                        esforça continuamente para firmar nossa posição de destaque. Junte-se a nós nessa
+                        <span>trajetória de sucesso</span>, onde a qualidade e o compromisso são os pilares que
+                        sustentam nossa jornada.
+                    </h5>
+        </div>
+
+        <!--------------- CONTAINER PRODUTO -------------->
+
+        <div class="container_produto">
+            <img src="./assets/caixas_acrilico/acri_poli.svg"
+                alt="Imagem de uma caixa de acrílico de energia polifásica">
+            <div class="produto_texto">
+                <h6>Caixas de Acrílico Polifásica</h6>
+                <p>Modelo Equatorial</p>
+            </div>
+        </div>
+
+        <!-- CHAMADA SERVIÇOS -------------------------------->
+        <div class="chamada_servico">
+            <p>entre outros produtos de qualidade você encontra aqui</p>
+        </div>
+        <!---------------  -->
+        <div class="container_footer">
+            <img src="./assets/banner_footer.svg" alt="Imagem de uma caixa de acrílico de energia polifásica">
+            <div class="produto_footer">
+                <h6>AGORA A <span>MB PADRÕES</span> CONTA COM O <span>SERVIÇO DE INSTALAÇÃO</span>.</h6>
+                <div class="footer_whatsapp">
+                    <a href="https://wa.me/5562991197234" target="_blank"><img src="./assets/btn_whatsapp.svg">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </div>
+
+        <!----------- container redes-sociais -->
+        <div class="container_redes">
+            <div class="redes_titulo">
+                <p>Siga-nos também no nosso instagram e faça um orçamento.</p>
+            </div>
+            <div class="redes_instagram">
+                <a class="instagram_footer" target="_blank" href="https://www.instagram.com/mbpadroes/">
+                    <img src="./assets/icon_instagram.svg">
+                    <p>@mbpadroes</p>
+                </a>
+            </div>
+        </div>
+
+        <!-------- BANNER ANUNCIO INSTITUCIONAL -->
+        <div class="banner_intitucional">
+            <img src="./assets/logo_completa.svg">
+            <p>Fábrica de Padrões Elétricos Equatorial. Instalações de padrões, Kit Saneago, mureta e rual.</p>
+        </div>
+
+
+    </main>
+    <!----------------------- FOOTER  --------------------------->
+    <footer>
+        <div class="footer">
+            <div class="container_mapa">
+                <div class="contato_mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.0385594521113!2d-48.967415725375!3d-16.371998037441923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea354c81a714b%3A0xf4af28f8407c8d71!2sMB%20PADR%C3%95ES!5e0!3m2!1spt-BR!2sbr!4v1705516732058!5m2!1spt-BR!2sbr"
+                        width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contato_footer">
+                <img src="./assets/logo_completa.svg">
+                <p>Rua Santana das Antas, Quadra 79, Lote 03. 2ª Etapa. Anápolis-GO, 75130-770.
+                <p>
+                <p>(62) 3313-6488</p>
+                <div class="footer_whatsapp_final">
+                    <a href="https://wa.me/5562991197234" target="_blank"><img src="./assets/btn_whatsapp.svg">Fale
+                        Conosco</a>
+                </div>
+
+                <!-- COPYRIGHT====================== -->
+                <p class="copyright">Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+            </div>
+        </div>
+        <p class="copyright_desktop">Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+
+    </footer>
+
+
+
+</body>
+
+</html>

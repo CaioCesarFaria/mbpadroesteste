@@ -1,0 +1,523 @@
+/* PÁGINA DE SERVIÇOS */
+:root {
+    --branco--fundo: #f2f3f3;
+    --fonte--principal: 'Alegreya Sans SC', sans-serif;
+    --azul--principal: #00263D;
+    --amarelo--principal: #E9AB01;
+    --cinza--claro: #CDD1D2;
+    --azul--texto: #04436E;
+    --amarelo-banner: #e9ab01;
+}
+
+
+@media screen and (max-width: 490px) {
+    .banner_servicos {
+        width: 100vw;
+    }
+
+    .container_titulo {
+        padding-bottom: 80px;
+    }
+
+    .servico_um {
+        padding-top: 50px;
+        background-color: var(--amarelo-banner);
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 180px;
+
+    }
+
+    .servico_um_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 150% */
+
+    }
+
+    .servico_um_texto p,
+    .servico_dois_texto p,
+    .servico_tres_texto p {
+        padding-top: 1.8rem;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+
+    .servico_um_texto span,
+    .servico_dois_texto span {
+        font-weight: 700;
+
+    }
+
+    .servico_dois {
+        padding-top: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 110px;
+        background-color: var(--amarelo-banner);
+        column-gap: 5px;
+
+
+    }
+
+    .servico_dois img {
+        width: 70%;
+    }
+
+    .servico_dois h2 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+        align-self: center;
+        /* 84.375% */
+        position: relative;
+        top: -80px;
+        left: -20px;
+        min-width: max-content;
+        padding-right: 50px;
+
+    }
+
+    .servico_dois_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 150% */
+
+    }
+
+    /* SERVIÇO TRÊS ============================== */
+
+
+    .servico_tres {
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        background-color: var(--amarelo-banner);
+        height: 200px;
+        max-width: 100vw;
+        column-gap: 40px;
+    }
+
+    .servico_tres h2 {
+        position: absolute;
+        left: 30px;
+        padding-bottom: 80px;
+        z-index: 9999;
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+    }
+
+    .servico_tres img {
+        width: 80%;
+
+    }
+
+    .servico_tres_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 491px) and (max-width: 767px) {
+    .banner_servicos {
+        width: 100vw;
+    }
+
+    .banner_servicos img {
+        width: 100vw;
+    }
+
+    .container_titulo {
+        padding-bottom: 80px;
+    }
+
+    .servico_um {
+        padding-top: 50px;
+        background-color: var(--amarelo-banner);
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100vw;
+        height: 180px;
+
+    }
+
+    .servico_um_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 150% */
+
+    }
+
+    .servico_um_texto p,
+    .servico_dois_texto p,
+    .servico_tres_texto p {
+        padding-top: 1.8rem;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+
+    .servico_um_texto span,
+    .servico_dois_texto span {
+        font-weight: 700;
+
+    }
+
+    .servico_dois {
+        padding-top: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 110px;
+        background-color: var(--amarelo-banner);
+        column-gap: 5px;
+
+
+    }
+
+    .servico_dois img {
+        width: 70%;
+    }
+
+    .servico_dois h2 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+        align-self: center;
+        /* 84.375% */
+        position: relative;
+        top: -80px;
+        left: -20px;
+        min-width: max-content;
+        padding-right: 50px;
+
+    }
+
+    .servico_dois_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 150% */
+
+    }
+
+    /* SERVIÇO TRÊS ============================== */
+
+
+    .servico_tres {
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        background-color: var(--amarelo-banner);
+        height: 200px;
+        max-width: 100vw;
+        column-gap: 40px;
+    }
+
+    .servico_tres h2 {
+        position: absolute;
+        left: 30px;
+        padding-bottom: 80px;
+        z-index: 9999;
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+    }
+
+    .servico_tres img {
+        width: 80%;
+
+    }
+
+    .servico_tres_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* ============= BANNER INSTITUCIONAL */
+    .banner_intitucional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(132% 132% at 50% 49.33%, #043756 0%, #061E30 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner_intitucional img {
+        width: 6.25rem;
+
+    }
+
+    .banner_intitucional p {
+        width: 60%;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* ==================== MAPA  */
+    .contato_mapa {
+        width: 100vw;
+        height: 200px;
+    }
+
+    .contato_mapa iframe {
+        width: 100vw;
+    }
+
+    /* ==================== contato FOOTER */
+    
+    .contato_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(132% 132% at 50% 49.33%, #043756 0%, #061E30 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        row-gap: 15px;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .contato_footer p {
+        width: 60%;
+    }
+
+    .footer_whatsapp_final {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: 7.625rem;
+        height: 1.3125rem;
+    }
+
+    .footer_whatsapp_final a {
+        color: var(--azul--texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 0.6875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer_whatsapp_final img {
+        width: 1rem;
+        height: 1rem;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright {
+        padding-top: 15px;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 152%;
+        /* 1.14rem */
+    }
+
+    /* ocultando funções do desktop */
+    .copyright_desktop {
+        display: none;
+    }
+}
+
+
+/* LAYOUT DESKTOP ================================ */
+@media only screen and (min-width: 1024px) {
+    .banner_servicos {
+        width: 100vw;
+    }
+
+    .banner_servicos img {
+        width: 100vw;
+        height: 400px;
+    }
+
+    .container_titulo {
+        padding-bottom: 80px;
+    }
+
+    .servico_um {
+        display: none;
+        
+        
+
+    }
+    .servico_um_texto {
+        padding-bottom: 3rem;
+    }
+    .servico_um_texto,
+    .servico_dois_texto,
+    .servico_tres_texto {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.8125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+        /* 150% */
+
+    }
+
+    .servico_um_texto p,
+    .servico_dois_texto p,
+    .servico_tres_texto p {
+        padding-top: 1.8rem;
+        width: 70%;
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+
+    .servico_um_texto span,
+    .servico_dois_texto span {
+        font-weight: 700;
+
+    }
+    .servico_dois {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        background-color: var(--amarelo--principal);
+        height: 150px;
+    }
+    .servico_dois h2 {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 2.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.125rem;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .servico_tres h2{
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 2.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.125rem;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .servico_tres {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: end;
+        background-color: var(--amarelo--principal);
+        height: 150px;
+    }
+}

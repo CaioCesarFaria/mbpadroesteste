@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700;800&family=Alegreya+Sans:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+    <!-- Biblioteca BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Ícone na Aba do Navegado -->
+    <link rel="icon" href="./assets/logo_icon.svg">
+    <!-- Folhas de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <!-- Scripts -->
+    <script defer src="./script/hamburguer.js"></script>
+    <script defer src="./script/modal.js"></script>
+
+
+    <title>MB Padrões</title>
+</head>
+
+<body>
+    <!----------------------- HEADER  --------------------------->
+    <header class="header">
+
+        <div class="header_logo">
+            <img src="./assets/logo_completa.svg" alt="Logo da Mb Padrões">
+
+        </div>
+
+        <div class="navbar">
+            <!------- MENU HAMBURGUER ------>
+            <div class="menu_hamburguer" id="menu_hamburguer">
+                <i class='bx bx-menu bx-lg'></i>
+            </div>
+            <div class="menu" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_somos.svg"><a href="./index.html">Quem Somos<div class="underline"></div></a>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_servicos.svg">
+                    <a href="./servicos.html">Serviços<div class="underline"></div></a>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="2" viewBox="0 0 142 2" fill="none">
+                    <path d="M1 1.01947H141" stroke="#E9AB01" stroke-linecap="round" />
+                </svg>
+                <div class="menu_btn">
+                    <img src="./assets/btn_produtos.svg">
+                    <a href="./produtos.html">Produtos<div class="underline"></div></a>
+                </div>
+            </div>
+
+            <div class="header_desktop">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none">
+                    <path d="M1 1L0.999997 71" stroke="#E9AB01" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <a class="header_instagram" target="_blank" href="https://www.instagram.com/mbpadroes/">
+                    <img src="./assets/icon_instagram.svg">
+                    <p>Siga nosso<br> Instagram!</p>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+                    <path d="M1.5 1L1.5 71" stroke="#E9AB01" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+                <div class="header_whatsapp">
+                    <a href="https://wa.me/5562991197234" target="_blank"><img src="./assets/btn_whatsapp.svg">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!----------------------- MAIN  --------------------------->
+    <main>
+        <!-- BANNER DOS SERVIÇOS -->
+        <div class="banner_servicos">
+            <img src="./assets/servicos/banner_servico.svg" alt="Imagem com os serviços oferecidos descritos">
+        </div>
+        <!----------------- CONTAINER TÍTULO SERVIÇOS-------------------->
+        <div class="container_titulo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="2" viewBox="0 0 105 2" fill="none">
+                <path d="M1 1H104" stroke="#00263D" stroke-linecap="round" />
+            </svg>
+            <div class="titulo_caixa">
+                <img src="./assets/icone_produtos.svg">
+                <h2>Produtos</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="2" viewBox="0 0 105 2" fill="none">
+                <path d="M1 1H104" stroke="#00263D" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="produtos_chamada_um">
+            <p>A MB Padrões destaca-se na oferta de produtos de alta qualidade para infraestrutura, incluindo <span>Caixas de Passagem, Caixas para Gás</span> sob encomenda e diversos modelos para <span>Caixas de Correspondência, Quadros de Comando, Hidrômetro, Incêndio e Telefone</span>. </p>
+        </div>
+        <div class="produtos_chamada_dois">
+            <p>Com uma ampla linha de Ferragens Pesadas e Acessórios, a empresa é reconhecida como parceira confiável para soluções robustas em infraestrutura. </p>
+        </div>
+        <!-- LISTA DE PRODUTOS -->
+        <section class="container_produtos">
+            <div class="produto prod_1" onclick="openFullscreen('./assets/produtos/1.svg')">
+                <img src="./assets/produtos/1.svg">
+            </div>
+            <div class="produto prod_2" onclick="openFullscreen('./assets/produtos/2.svg')">
+                <img src="./assets/produtos/2.svg">
+            </div>
+            <div class="produto prod_3" onclick="openFullscreen('./assets/produtos/3.svg')">
+                <img src="./assets/produtos/3.svg">
+            </div>
+            <div class="produto prod_4" onclick="openFullscreen('./assets/produtos/4.svg')">
+                <img src="./assets/produtos/4.svg">
+            </div>
+            <div class="produto prod_5" onclick="openFullscreen('./assets/produtos/5.svg')">
+                <img src="./assets/produtos/5.svg">
+            </div>
+            <div class="produto prod_6" onclick="openFullscreen('./assets/produtos/6.svg')">
+                <img src="./assets/produtos/6.svg">
+            </div>
+            <div class="produto prod_7" onclick="openFullscreen('./assets/produtos/7.svg')">
+                <img src="./assets/produtos/7.svg">
+            </div>
+            <div class="produto prod_8" onclick="openFullscreen('./assets/produtos/8.svg')">
+                <img src="./assets/produtos/8.svg">
+            </div>
+            <div class="produto prod_9" onclick="openFullscreen('./assets/produtos/9.svg')">
+                <img src="./assets/produtos/9.svg">
+            </div>
+            <div class="produto prod_10" onclick="openFullscreen('./assets/produtos/10.svg')">
+                <img src="./assets/produtos/10.svg">
+            </div>
+            <div class="produto prod_11" onclick="openFullscreen('./assets/produtos/11.svg')">
+                <img src="./assets/produtos/11.svg">
+            </div>
+            <div class="produto prod_12" onclick="openFullscreen('./assets/produtos/12.svg')">
+                <img src="./assets/produtos/12.svg">
+            </div>
+            <div class="produto prod_13" onclick="openFullscreen('./assets/produtos/13.svg')">
+                <img src="./assets/produtos/13.svg">
+            </div>
+            <div class="produto prod_14" onclick="openFullscreen('./assets/produtos/14.svg')">
+                <img src="./assets/produtos/14.svg">
+            </div>
+            <div class="produto prod_15" onclick="openFullscreen('./assets/produtos/15.svg')">
+                <img src="./assets/produtos/15.svg">
+            </div>
+            <div class="produto prod_16" onclick="openFullscreen('./assets/produtos/16.svg')">
+                <img src="./assets/produtos/16.svg">
+            </div>
+            <div class="produto prod_17" onclick="openFullscreen('./assets/produtos/17.svg')">
+                <img src="./assets/produtos/17.svg">
+            </div>
+            <div class="produto prod_18" onclick="openFullscreen('./assets/produtos/18.svg')">
+                <img src="./assets/produtos/18.svg">
+            </div>
+            <div class="produto prod_19" onclick="openFullscreen('./assets/produtos/19.svg')">
+                <img src="./assets/produtos/19.svg">
+            </div>
+            <div class="produto prod_20" onclick="openFullscreen('./assets/produtos/20.svg')">
+                <img src="./assets/produtos/20.svg">
+            </div>
+            <div class="produto prod_21" onclick="openFullscreen('./assets/produtos/21.svg')">
+                <img src="./assets/produtos/21.svg">
+            </div>
+            <div class="produto prod_22" onclick="openFullscreen('./assets/produtos/22.svg')">
+                <img src="./assets/produtos/22.svg">
+            </div>
+            <div class="produto prod_23" onclick="openFullscreen('./assets/produtos/23.svg')">
+                <img src="./assets/produtos/23.svg">
+            </div>
+            <div class="produto prod_24" onclick="openFullscreen('./assets/produtos/24.svg')">
+                <img src="./assets/produtos/24.svg">
+            </div>
+            <div class="produto prod_25" onclick="openFullscreen('./assets/produtos/25.svg')">
+                <img src="./assets/produtos/25.svg">
+            </div>
+            <div class="produto prod_26" onclick="openFullscreen('./assets/produtos/26.svg')">
+                <img src="./assets/produtos/26.svg">
+            </div>
+            <div class="produto prod_27" onclick="openFullscreen('./assets/produtos/27.svg')">
+                <img src="./assets/produtos/27.svg">
+            </div>
+            <div class="produto prod_28" onclick="openFullscreen('./assets/produtos/28.svg')">
+                <img src="./assets/produtos/28.svg">
+            </div>
+            <div class="produto prod_29" onclick="openFullscreen('./assets/produtos/29.svg')">
+                <img src="./assets/produtos/29.svg">
+            </div>
+            <div class="produto prod_30" onclick="openFullscreen('./assets/produtos/30.svg')">
+                <img src="./assets/produtos/30.svg">
+            </div>
+            <div class="produto prod_31" onclick="openFullscreen('./assets/produtos/31.svg')">
+                <img src="./assets/produtos/31.svg">
+            </div>
+            <div class="produto prod_32" onclick="openFullscreen('./assets/produtos/32.svg')">
+                <img src="./assets/produtos/32.svg">
+            </div>
+            <div class="produto prod_33" onclick="openFullscreen('./assets/produtos/33.svg')">
+                <img src="./assets/produtos/33.svg">
+            </div>
+            <div class="produto prod_34" onclick="openFullscreen('./assets/produtos/34.svg')">
+                <img src="./assets/produtos/34.svg">
+            </div>
+            <div class="produto prod_35" onclick="openFullscreen('./assets/produtos/35.svg')">
+                <img src="./assets/produtos/35.svg">
+            </div>
+            <div class="produto prod_36" onclick="openFullscreen('./assets/produtos/36.svg')">
+                <img src="./assets/produtos/36.svg">
+            </div>
+            <div class="produto prod_37" onclick="openFullscreen('./assets/produtos/37.svg')">
+                <img src="./assets/produtos/37.svg">
+            </div>
+            <div class="produto prod_38" onclick="openFullscreen('./assets/produtos/38.svg')">
+                <img src="./assets/produtos/38.svg">
+            </div>
+            <div class="produto prod_39" onclick="openFullscreen('./assets/produtos/39.svg')">
+                <img src="./assets/produtos/39.svg">
+            </div>
+            <div class="produto prod_40" onclick="openFullscreen('./assets/produtos/40.svg')">
+                <img src="./assets/produtos/40.svg">
+            </div>
+            <div class="produto prod_41" onclick="openFullscreen('./assets/produtos/41.svg')">
+                <img src="./assets/produtos/41.svg">
+            </div>
+            <div class="produto prod_42" onclick="openFullscreen('./assets/produtos/42.svg')">
+                <img src="./assets/produtos/42.svg">
+            </div>
+            <div class="produto prod_43" onclick="openFullscreen('./assets/produtos/43.svg')">
+                <img src="./assets/produtos/43.svg">
+            </div>
+            <div class="produto prod_44"onclick="openFullscreen('./assets/produtos/44.svg')">
+                <img src="./assets/produtos/44.svg">
+            </div>
+            <div class="produto prod_45" onclick="openFullscreen('./assets/produtos/45.svg')">
+                <img src="./assets/produtos/45.svg">
+            </div>
+            <div class="produto prod_46" onclick="openFullscreen('./assets/produtos/46.svg')">
+                <img src="./assets/produtos/46.svg">
+            </div>
+            <div class="produto prod_47" onclick="openFullscreen('./assets/produtos/47.svg')">
+                <img src="./assets/produtos/47.svg">
+            </div>
+            <div class="produto prod_48" onclick="openFullscreen('./assets/produtos/48.svg')">
+                <img src="./assets/produtos/48.svg">
+            </div>
+            <div class="produto prod_49" onclick="openFullscreen('./assets/produtos/49.svg')">
+                <img src="./assets/produtos/49.svg">
+            </div>
+            <div class="produto prod_50" onclick="openFullscreen('./assets/produtos/50.svg')">
+                <img src="./assets/produtos/50.svg">
+            </div>
+
+
+
+
+        </section>
+
+
+
+    </main>
+    <!----------------------- FOOTER  --------------------------->
+
+    <!----------------------- FOOTER  --------------------------->
+
+
+    <footer>
+        <!-------- BANNER ANUNCIO INSTITUCIONAL -->
+        <div class="banner_intitucional">
+            <img src="./assets/logo_completa.svg">
+            <p>Fábrica de Padrões Elétricos Equatorial. Instalações de padrões, Kit Saneago, mureta e rual.</p>
+        </div>
+
+        <div class="footer">
+            <div class="container_mapa">
+                <div class="contato_mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.0385594521113!2d-48.967415725375!3d-16.371998037441923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea354c81a714b%3A0xf4af28f8407c8d71!2sMB%20PADR%C3%95ES!5e0!3m2!1spt-BR!2sbr!4v1705516732058!5m2!1spt-BR!2sbr"
+                        width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contato_footer">
+                <img src="./assets/logo_completa.svg">
+                <p>Rua Santana das Antas, Quadra 79, Lote 03. 2ª Etapa. Anápolis-GO, 75130-770.
+                <p>
+                <p>(62) 3313-6488</p>
+                <div class="footer_whatsapp_final">
+                    <a href="https://wa.me/5562991197234" target="_blank"><img src="./assets/btn_whatsapp.svg">Fale
+                        Conosco</a>
+                </div>
+
+                <!-- COPYRIGHT====================== -->
+                <p class="copyright">Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+            </div>
+        </div>
+        <p class="copyright_desktop">Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+    </footer>
+
+
+
+</body>
+
+</html>

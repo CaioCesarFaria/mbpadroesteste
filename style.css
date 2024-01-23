@@ -1,0 +1,1236 @@
+/* ----- SITE DESENVOLVIDO E CRIADO POR GAIA DESENVOLVIMENTO WEB & UX/UI DESIGN */
+
+/* -------------------- Resentando pré-configurações ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+/* -------------------- DEFININDO AS VARIÁVEIS  ------------------ */
+:root {
+    --branco--fundo: #f2f3f3;
+    --fonte--principal: 'Alegreya Sans SC', sans-serif;
+    --azul--principal: #00263D;
+    --amarelo--principal: #E9AB01;
+    --cinza--claro: #CDD1D2;
+    --azul--texto: #04436E;
+}
+
+/* -------------------- HEADER ------------------ */
+.header {
+    display: flex;
+    background-color: var(--azul--principal);
+    width: 100vw;
+    height: 75px;
+    align-items: center;
+    justify-content: space-around;
+    background: radial-gradient(132% 132% at 50% 49.33%, #0A507D 0%, #061E30 100%);
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30vw;
+}
+
+/* -------------------- MENU HAMBURGUER ------------------ */
+.navbar {
+
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu_hamburguer i {
+    color: var(--amarelo--principal);
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: var(--cinza--claro);
+    text-decoration: none;
+    padding: 15px;
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+/* -------------------- MEDIA QUERIES / ATÉ 490PX ------------------ */
+@media screen and (max-width: 490px) {
+
+
+
+    .menu_hamburguer {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        background-color: var(--azul--principal);
+        background: radial-gradient(132% 132% at 50% 49.33%, #0A507D 0%, #061E30 100%);
+        z-index: 9999;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .menu_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    svg {
+        margin: 0 auto;
+
+    }
+
+    .menu_btn a {
+        padding: 10px;
+        border-bottom: 1px solid var(--azul-marinho);
+        color: var(--cinza--claro);
+        font-weight: 700;
+
+
+
+
+    }
+
+    /* CARROSSEL MOBILE ---------------- */
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper img {
+        width: 100%;
+    }
+
+    /* TAGS OCULTAS */
+    .header_desktop {
+        display: none;
+    }
+
+    /* CONTAINER TITULO ------------------ */
+    .container_titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .titulo_caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .titulo_caixa img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .titulo_caixa h2 {
+        color: var(--azul--principal);
+        font-family: var(--fonte--principal);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    /* ========== QUEM SOMOS ============== */
+    .container_quemsomos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .container_quemsomos h3,
+    .container_quemsomos h4,
+    .container_quemsomos h5 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        /* 150% */
+        width: 80%;
+    }
+
+    .container_quemsomos span {
+        font-weight: 700;
+    }
+
+    /* ================ CONTAINER PRODUTO =============== */
+    .container_produto {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--amarelo--principal);
+        height: 160px;
+    }
+
+    .container_produto img {
+        max-width: 50%;
+
+    }
+
+    .produto_texto {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .produto_texto h6 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+        /* 84.375% */
+    }
+
+    .produto_texto p {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* ============ chamada serviço */
+    .chamada_servico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .chamada_servico p {
+        width: 15.875rem;
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+
+    /* ------- container footer */
+
+    .container_footer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--azul--principal);
+        height: 140px;
+    }
+
+    .container_footer img {
+        max-width: 50%;
+
+    }
+
+    .produto_footer {
+        width: 13.125rem;
+    }
+
+    .produto_footer h6 {
+        color: var(--branco--fundo);
+        font-family: var(--fonte--principal);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .produto_footer span {
+        color: var(--amarelo--principal);
+    }
+
+
+    /* .footer_whatsapp {
+        display: flex;
+    } */
+    .footer_whatsapp a,
+    .footer_whatsapp_final a {
+        color: var(--azul--texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 0.6875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer_whatsapp img,
+    .footer_whatsapp_final img {
+        width: 1rem;
+        height: 1rem;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_whatsapp {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: 7.625rem;
+        height: 1.3125rem;
+    }
+
+    .container_redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .redes_titulo {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 50%;
+        text-align: center;
+        padding-top: 40px;
+
+    }
+
+    .instagram_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+
+    .instagram_footer img {
+        height: 50px;
+    }
+
+    .instagram_footer p {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    /* .redes_instagram {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+    } */
+
+    /* ============= BANNER INSTITUCIONAL */
+    .banner_intitucional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(132% 132% at 50% 49.33%, #043756 0%, #061E30 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner_intitucional img {
+        width: 6.25rem;
+
+    }
+
+    .banner_intitucional p {
+        width: 60%;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* ==================== MAPA  */
+    .contato_mapa {
+        width: 100vw;
+        height: 200px;
+    }
+
+    /* ==================== contato FOOTER */
+    .contato_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(132% 132% at 50% 49.33%, #043756 0%, #061E30 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        row-gap: 15px;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .contato_footer p {
+        width: 60%;
+    }
+
+    .footer_whatsapp_final {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: 7.625rem;
+        height: 1.3125rem;
+    }
+
+    .copyright {
+        padding-top: 15px;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 152%;
+        /* 1.14rem */
+    }
+
+    /* ocultando funções do desktop */
+    .copyright_desktop {
+        display: none;
+    }
+}
+
+/* -------------------- MEDIA QUERIES / MIN 491PX / 7 TABLETS  ------------------ */
+@media screen and (min-width: 491px) and (max-width: 767px) {
+    .menu_hamburguer {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        background-color: var(--azul--principal);
+        background: radial-gradient(132% 132% at 50% 49.33%, #0A507D 0%, #061E30 100%);
+        z-index: 9999;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .menu_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    svg {
+        margin: 0 auto;
+
+    }
+
+    .menu_btn a {
+        padding: 10px;
+        border-bottom: 1px solid var(--azul-marinho);
+        color: var(--cinza--claro);
+        font-weight: 700;
+
+
+
+
+    }
+
+    /* CARROSSEL TABLETS */
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper img {
+        width: 100%;
+    }
+
+    /* CONTAINER TITULO ------------------ */
+    .container_titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .titulo_caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .titulo_caixa img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .titulo_caixa h2 {
+        color: var(--azul--principal);
+        font-family: var(--fonte--principal);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    /* ========== QUEM SOMOS ============== */
+    .container_quemsomos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .container_quemsomos h3,
+    .container_quemsomos h4,
+    .container_quemsomos h5 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        /* 150% */
+        width: 80%;
+    }
+
+    .container_quemsomos span {
+        font-weight: 700;
+    }
+
+    /* ================ CONTAINER PRODUTO =============== */
+    .container_produto {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--amarelo--principal);
+        height: 160px;
+    }
+
+    .container_produto img {
+        max-width: 50%;
+
+    }
+
+    .produto_texto {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .produto_texto h6 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6875rem;
+        /* 84.375% */
+    }
+
+    .produto_texto p {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* ============ chamada serviço */
+    .chamada_servico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .chamada_servico p {
+        width: 15.875rem;
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .container_redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .redes_titulo {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 50%;
+        text-align: center;
+        padding-top: 40px;
+
+    }
+
+    .instagram_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .instagram_footer img {
+        height: 50px;
+    }
+
+    .instagram_footer p {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    /* TAGS OCULTAS */
+    .header_desktop {
+        display: none;
+    }
+    .copyright_desktop {
+        display: none;
+    }
+}
+
+/* -------------------- MEDIA QUERIES / MIN 1024PX pra pc e desktop ------------------ */
+@media only screen and (min-width: 1024px) {
+    .header {
+        height: 117px;
+        display: flex;
+
+    }
+
+    .header_logo {
+        padding: 0;
+    }
+
+    .header_logo img {
+        width: 160px;
+
+    }
+
+
+    /* Estilos para telas grandes, como desktops */
+    .menu_hamburguer {
+        display: none;
+    }
+
+    .menu svg {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+        padding-top: 20px;
+        column-gap: 10px;
+    }
+
+    .menu_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_btn:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+
+    }
+
+    .menu_btn a:hover {
+        font-weight: 500;
+    }
+
+
+
+
+    .menu_btn img {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+
+    }
+
+    .header_desktop {
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+
+    }
+
+
+
+
+    .header_instagram {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_instagram:hover {
+        transform: scale(1.1);
+    }
+
+    .header_instagram p {
+        color: var(--cinza--claro);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.0625rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100.9%;
+    }
+
+    .header_instagram img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header_whatsapp a {
+        color: var(--azul--texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .header_whatsapp img {
+        padding-right: 10px;
+    }
+
+    .header_whatsapp {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: 11.8125rem;
+        height: 2.5625rem;
+    }
+
+    .header_whatsapp:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+
+    }
+
+    /* CARROSSEL DESKTOP */
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper img {
+        width: 100%;
+
+    }
+
+    /* CONTAINER TITULO ------------------ */
+    .container_titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .titulo_caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .titulo_caixa img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .titulo_caixa h2 {
+        color: var(--azul--principal);
+        font-family: var(--fonte--principal);
+        font-size: 2.6875rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    /* ========== QUEM SOMOS ============== */
+    .container_quemsomos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .container_quemsomos h3,
+    .container_quemsomos h4,
+    .container_quemsomos h5 {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+
+        font-size: 2.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.875rem;
+        width: 80%;
+    }
+
+    .container_quemsomos span {
+        font-weight: 700;
+    }
+
+    /* ================ CONTAINER PRODUTO =============== */
+    .container_produto {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--amarelo--principal);
+        height: 160px;
+    }
+
+    .container_produto img {
+        max-width: 60%;
+
+    }
+
+    .produto_texto {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .produto_texto h6 {
+        width: 36.75rem;
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 3.6875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.9375rem;
+        /* 84.375% */
+    }
+
+    .produto_texto p {
+        width: 36.75rem;
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2.0625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* ============ chamada serviço */
+    .chamada_servico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .chamada_servico p {
+        width: 50%;
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        padding-bottom: 90px;
+    }
+    /* ============== container footer */
+    /* ------- container footer */
+
+    .container_footer {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--azul--principal);
+        height: 180px;
+    }
+
+    .container_footer img {
+        width: 20%;
+
+    }
+
+    .produto_footer {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .produto_footer h6 {
+        color: var(--branco--fundo);
+        font-family: var(--fonte--principal);
+        font-size: 1.65rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .produto_footer span {
+        color: var(--amarelo--principal);
+    }
+
+
+    /* .footer_whatsapp {
+        display: flex;
+    } */
+    .footer_whatsapp a {
+        color: var(--azul--texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer_whatsapp img,
+    .footer_whatsapp_final img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_whatsapp {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: 9rem;
+        height: 1.8rem;
+    }
+    .container_redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        padding-bottom: 30px;
+    }
+
+    .redes_titulo {
+        color: var(--azul--texto);
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 40%;
+        padding-top: 90px;
+
+    }
+
+    .instagram_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .instagram_footer img {
+        height: 80px;
+    }
+
+    .instagram_footer p {
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    /* ===== banner institucional */
+    
+    .banner_intitucional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(132% 132% at 50% 49.33%, #043756 0%, #061E30 100%);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: 230px;
+    }
+    .banner_intitucional img{
+        width: 20%;
+        padding-top: 40px;
+
+    }
+    .banner_intitucional p {
+        width: 40%;
+        color: #CDD1D2;
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.425rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 40px;   
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        column-gap: 0.5rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contato_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .contato_footer img{
+        width: 30%;
+    }
+    .contato_footer p {
+        width: 60%;
+        color: var(--azul--texto);
+        font-family: var(--fonte--principal);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    /* botao whatsapp -----------------------------*/
+    .footer_whatsapp_final {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-family: var(--fonte--principal);
+        font-size: 1.1875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 0.625rem;
+        background: var(--BG_gradiente, linear-gradient(180deg, #FFF -2.37%, #CDD1D2 69.39%, #788794 115.17%));
+        box-shadow: 0px 3px 7px 0px rgba(181, 187, 232, 0.10), 0px 13px 13px 0px rgba(181, 187, 232, 0.09), 0px 30px 18px 0px rgba(181, 187, 232, 0.05), 0px 54px 21px 0px rgba(181, 187, 232, 0.01), 0px 84px 24px 0px rgba(181, 187, 232, 0.00);
+        width: max-content;
+        height: 2.3125rem;
+    }
+
+    .footer_whatsapp_final a {
+        color: var(--azul--texto);
+        display: flex;
+        width: 200px;
+        align-items: center;
+        text-align: left;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .copyright_desktop {
+        font-family: var(--fonte--principal);
+        color: var(--azul--texto);
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 40px;
+    }
+    /* TAGS OCULTAS */
+    .header_desktop {
+        display: flex;
+    }
+
+    .container_titulo svg {
+        display: none;
+    }
+    .copyright {
+        display: none;
+    }
+}
+
+
+/* -------------------- ------------------ */
+
+
+/* -------------------- ------------------ */
