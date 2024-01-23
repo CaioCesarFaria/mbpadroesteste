@@ -911,7 +911,7 @@ a:any-link {
     .container_quemsomos h4,
     .container_quemsomos h5 {
         color: var(--azul--texto);
-        text-align: center;
+        text-align: left;
         font-family: var(--fonte--principal);
 
         font-size: 2.125rem;
